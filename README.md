@@ -232,6 +232,31 @@ The contract uses a pinned `py-genlayer` runner dependency. Do not replace it
 with `py-genlayer:test`, `py-genlayer:latest`, or an unversioned dependency for
 network deployment.
 
+## Active Deployment (Studionet)
+
+The current live instance on GenLayer Studionet:
+
+| Field | Value |
+| --- | --- |
+| Network | `studionet` (chainId `61999`, `https://studio.genlayer.com/api`) |
+| Contract address | `0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9` |
+| Deploy tx hash | `0x18c7260d76daeb76ad00677a5c0643bad14205b3b143cadd97da5ff4fa57e570` |
+| Deployer / owner | `0x50695B75CaBe031CD4cfaD1F16dA338b658D3b48` |
+| Deployed | 2026-08-22 |
+| Explorer | https://genlayer-explorer.vercel.app |
+
+The canonical machine-readable record lives in
+[`deployments/studionet.json`](deployments/studionet.json). The frontend reads
+this address from `VITE_CONTRACT_ADDRESS` (see `frontend/.env.local`); the
+deployer credentials live in the gitignored root `.env`.
+
+```bash
+# Verify the live deployment
+genlayer receipt 0x18c7260d76daeb76ad00677a5c0643bad14205b3b143cadd97da5ff4fa57e570
+genlayer call    0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9 get_owner
+genlayer schema  0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9
+```
+
 ## Deployment Guide
 
 1. Install the GenLayer CLI and authenticate with a deployment account.

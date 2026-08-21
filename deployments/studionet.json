@@ -1,0 +1,19 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://genlayer-explorer.vercel.app",
+  "contract": {
+    "name": "AIPatentGuard",
+    "source": "contracts/ai_patent_guard.py",
+    "address": "0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9"
+  },
+  "deployment": {
+    "txHash": "0x18c7260d76daeb76ad00677a5c0643bad14205b3b143cadd97da5ff4fa57e570",
+    "deployer": "0x50695B75CaBe031CD4cfaD1F16dA338b658D3b48",
+    "owner": "0x50695B75CaBe031CD4cfaD1F16dA338b658D3b48",
+    "status": "ACCEPTED",
+    "consensus": "MAJORITY_AGREE",
+    "deployedAt": "2026-08-22"
+  }
+}
