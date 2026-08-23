@@ -307,10 +307,10 @@ The current live instance on GenLayer Studionet:
 | Field | Value |
 | --- | --- |
 | Network | `studionet` (chainId `61999`, `https://studio.genlayer.com/api`) |
-| Contract address | `0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9` |
-| Deploy tx hash | `0x18c7260d76daeb76ad00677a5c0643bad14205b3b143cadd97da5ff4fa57e570` |
+| Contract address | `0x880B741C6Ba006F0B3Dc57a9536449D27C9Df024` |
+| Deploy tx hash | `0xfd61a86a179c9178821b82093f2a82c3b98c8a4492378dc741fa0641289be8e0` |
 | Deployer / owner | `0x50695B75CaBe031CD4cfaD1F16dA338b658D3b48` |
-| Deployed | 2026-08-22 |
+| Deployed | 2026-08-23 |
 | Explorer | https://genlayer-explorer.vercel.app |
 
 The canonical machine-readable record lives in
@@ -320,9 +320,9 @@ deployer credentials live in the gitignored root `.env`.
 
 ```bash
 # Verify the live deployment
-genlayer receipt 0x18c7260d76daeb76ad00677a5c0643bad14205b3b143cadd97da5ff4fa57e570
-genlayer call    0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9 get_owner
-genlayer schema  0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9
+genlayer receipt 0xfd61a86a179c9178821b82093f2a82c3b98c8a4492378dc741fa0641289be8e0
+genlayer call    0x880B741C6Ba006F0B3Dc57a9536449D27C9Df024 get_owner
+genlayer schema  0x880B741C6Ba006F0B3Dc57a9536449D27C9Df024
 ```
 
 ## Deployment Guide

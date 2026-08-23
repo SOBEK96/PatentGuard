@@ -68,12 +68,27 @@ a re-audit. Each extension is additive and append-only against the deployed
 storage layout, so it can land without breaking upgrade safety. We'd welcome
 your input on prioritizing those for the next phase.
 
+**Fresh deployment.** A new Studionet instance carrying the updated, narrowed
+audit prompt is now live (the previous instance predates the wording change):
+
+| Field | Value |
+| --- | --- |
+| Network | `studionet` (chainId `61999`) |
+| Contract address | `0x880B741C6Ba006F0B3Dc57a9536449D27C9Df024` |
+| Deploy tx hash | `0xfd61a86a179c9178821b82093f2a82c3b98c8a4492378dc741fa0641289be8e0` |
+| Owner | `0x50695B75CaBe031CD4cfaD1F16dA338b658D3b48` |
+| Deployed | 2026-08-23 |
+
+You can confirm the deployed source carries the narrowed scope wording with
+`genlayer code 0x880B741C6Ba006F0B3Dc57a9536449D27C9Df024`.
+
 Pointers for re-review:
 
 - `README.md` → *Originality Scope: Sampled Sliding Window* and *Roadmap:
   Verifiable Provenance and Challenge Path*
 - `contracts/ai_patent_guard.py` → `MAX_CORPUS_PATENTS` comment and the
   `audit_prompt` scope wording in `register_and_audit_patent`
+- `deployments/studionet.json` → canonical machine-readable deployment record
 
 Thanks again for the careful and actionable review.
 

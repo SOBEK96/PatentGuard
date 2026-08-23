@@ -6,14 +6,14 @@
   "contract": {
     "name": "AIPatentGuard",
     "source": "contracts/ai_patent_guard.py",
-    "address": "0x36036f497a07B5b8E03759F681A0214Bc5e7F0f9"
+    "address": "0x880B741C6Ba006F0B3Dc57a9536449D27C9Df024"
   },
   "deployment": {
-    "txHash": "0x18c7260d76daeb76ad00677a5c0643bad14205b3b143cadd97da5ff4fa57e570",
+    "txHash": "0xfd61a86a179c9178821b82093f2a82c3b98c8a4492378dc741fa0641289be8e0",
     "deployer": "0x50695B75CaBe031CD4cfaD1F16dA338b658D3b48",
     "owner": "0x50695B75CaBe031CD4cfaD1F16dA338b658D3b48",
     "status": "ACCEPTED",
     "consensus": "MAJORITY_AGREE",
-    "deployedAt": "2026-08-22"
+    "deployedAt": "2026-08-23"
   }
 }
