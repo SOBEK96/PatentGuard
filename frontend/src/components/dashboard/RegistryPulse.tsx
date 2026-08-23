@@ -19,8 +19,9 @@ export function RegistryPulse({ mode, totalAttempts }: RegistryPulseProps) {
         <span>logic.</span>
       </h1>
       <p className="hero-lede">
-        Register AI architectures against an approved on-chain corpus. Independent
-        validators replay the semantic audit before your claim becomes permanent.
+        Register AI architectures against a sampled window of the 64 most recent
+        approved on-chain records. Independent validators replay the semantic
+        audit before your claim becomes permanent.
       </p>
       <div className="hero-actions">
         <a className="primary-action" href="#register">

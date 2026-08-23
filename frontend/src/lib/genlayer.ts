@@ -199,7 +199,7 @@ async function simulateRegistration(
   onProgress({
     phase: "leader-analysis",
     label: "Chief Judge analyzing",
-    detail: "The candidate is being compared with the approved registry corpus.",
+    detail: "The candidate is being compared with a sampled window of the 64 most recent approved records.",
   });
   await delay(700);
   onProgress({
